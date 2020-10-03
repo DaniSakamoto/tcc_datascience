@@ -156,7 +156,7 @@ Publicado no Workshop IEEE sobre Análise e Modelagem de Faces e Gestos (AMFG), 
 
 ## Redes Utilizadas no Transfer Learning
 ### ResNet 50
- COMPARATIVO DOS RESULTADOS E TODO O RESULTADO em -> https://drive.google.com/file/d/1wNkqbWvPC9ov-ZQu9EJ5h-KkDiBs83iw/view?usp=sharing
+ COMPARATIVO DOS RESULTADOS E TODO ANALISE EM -> https://drive.google.com/file/d/1wNkqbWvPC9ov-ZQu9EJ5h-KkDiBs83iw/view?usp=sharing
 
 ![resnet](https://miro.medium.com/max/1000/1*zbDxCB-0QDAc4oUGVtg3xw.png)
 
