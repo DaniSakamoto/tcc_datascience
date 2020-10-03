@@ -1,5 +1,3 @@
-# Age_classification
- Trabalho de conclusão de Curso 
 <h2><center>Trabalho de conclusão do curso de Especialização em Ciência de Dados da Facens</center></h2>
 <h3><center>Faculdade de Engenharia de Sorocaba</center></h3>
 
