@@ -180,17 +180,52 @@ As Inception-ResNets foram introduzidas, por pesquisadores do Google, em 2016, n
    Em suma, os módulos de "Inception" já presentes nas redes do tipo "Inception", foram convertidos para "Residual Inception Blocks", ou seja, há módulos que "pulam" conexões, resultando em memórial residual. Além disso, foram adicionados mais módulos de "Inception", bem como um novo tipo de módulo (Inception-A).</p>
  
 
+### Utilização de Face Embeddings - Facenet
 
+<p style='text-align: justify;'>
+Adicionalmente, efetuamos a análise do dataset mediante:</p>
+<ol>
+<li>Detecção Facial com a biblioteca MTCNN;</li>
+<li>Extração de Features (Face Embeddings), utilizando Facenet;</li>
+<li>Utilização da biblioteca Pycaret para explorar o potencial modelo de Aprendizado de Máquina mais adequado ao problema de classificação;</li>
+<li>Aplicação do algoritmo Xgboost.</li>
+</ol>
+ <p style='text-align: justify;'>
+O sistema Facenet foi desenvolvido em 2015, por pesquisadores do Google, e representa o estado da arte em datasets benchmark de reconhecimento facial.
+Ele pode ser utilizado para extrair features de alta qualidade das faces, chamados <i>face embeddings</i>, representados por 128 embeddings vetoriais. Utilizamos uma implementação desse modelo para a biblioteca Keras, desenvolvido por Hiroki Taniai
+</p>
+<p style='text-align: justify;'>
+Após a extração dos <i>face embeddings</i>, utilizamos a biblioteca Pycaret, que permite testar vários modelos de uma só vez no dataset, a fim de escolher o que apresente os melhores resultados. Posteriormente, implementamos o modelo escolhido, Xgboost, que possui biblioteca própria.
+</p>
+  https://medium.com/clique-org/how-to-create-a-face-recognition-model-using-facenet-keras-fd65c0b092f1; https://machinelearningmastery.com/how-to-develop-a-face-recognition-system-using-facenet-in-keras-and-an-svm-classifier/; https://github.com/nyoki-mtl; https://github.com/pycaret/pycaret.
+
+
+<p style='text-align: justify;'>Verificamos que os resultados obtidos com a extração de <i>face embeddings</i> seguida pela classificação utilizando o algoritmo XGBoost revelaram-se ligeiramente superiores aos que obtivemos utilizando <i>transfer learning</i> com Redes Neurais Convolucionais.</p> 
+<p style='text-align: justify;'>O grande diferencial, no entanto, é o esforço computacional necessário. Se o treinamento das redes convolucionais levou <b>dias</b> em nossos computadores, o processamento completo (extração de face embeddings com a utilização do Facenet seguido do treinamento utilizando o XGBoost) realizou-se em <b>poucas horas</b>, revelando-se uma metodologia muito mais efetiva e eficiente.</p>   
+
+## Resultado do modelo XGBoost
+
+<p style='text-align: justify;'>
+XGBoost é uma biblioteca otimizada de aumento de gradiente distribuída projetada para ser altamente eficiente, flexível e portátil. Ele implementa algoritmos de aprendizado de máquina sob a estrutura Gradient Boosting. O XGBoost fornece um reforço de árvore paralela (também conhecido como GBDT, GBM) que resolve muitos problemas de ciência de dados de maneira rápida e precisa. O mesmo código é executado em grandes ambientes distribuídos (Hadoop, SGE, MPI) e pode resolver problemas além de bilhões de exemplos.</p>  https://xgboost.readthedocs.io/en/latest/ 
 
 **Referências**
+#### Referências
 
-<p>
+<p>G. Levi and T. Hassncer, "Age and gender classification using convolutional neural networks," 2015 IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), Boston, MA, 2015, pp. 34-42, doi: 10.1109/CVPRW.2015.7301352.</p>
 
-<p>Tal Hassner, Shai Harel, Eran Paz and Roee Enbar, Effective Face Frontalization in Unconstrained Images, IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Boston, June 2015.
-    Disponível em: https://ieeexplore.ieee.org/document/7301352, acesso em 29/09/2020.
+<p>(1, 2) Zhang, K., Zhang, Z., Li, Z., and Qiao, Y. (2016). Joint face detection and alignment using multitask cascaded convolutional networks. IEEE Signal Processing Letters, 23(10):1499–1503.</p>
 
-<p> Gil Levi and Tal Hassner, Age and Gender Classification Using Convolutional Neural Networks, IEEE Workshop on Analysis and Modeling of Faces and Gestures (AMFG), at the IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Boston, June 2015.
-    Disponível em: https://talhassner.github.io/home/projects/frontalize/CVPR2015_frontalize.pdf, acesso em 29/09/2020.
+<p>Jason Brownlee on December 20, 2017 in Deep Learning for Computer Vision https://machinelearningmastery.com/how-to-improve-performance-with-transfer-learning-for-deep-learning-neural-networks/.</p>
+<p> Raimi Karim on July, 29, 2019: "Illustrated: 10 CNN Architectures
+A compiled visualisation of the common convolutional neural networks" in Towards Data Science. https://towardsdatascience.com/illustrated-10-cnn-architectures-95d78ace614d, acesso em 01/10/2020.</p> 
 
-<p>Eran Eidinger, Roee Enbar, and Tal Hassner, Age and Gender Estimation of Unfiltered Faces, Transactions on Information Forensics and Security (IEEE-TIFS), special issue on Facial Biometrics in the Wild, Volume 9, Issue 12, pages 2170 - 2179, Dec. 2014.
-    Disponível em: https://talhassner.github.io/home/projects/cnn_agegender/CVPR2015_CNN_AgeGenderEstimation.pdf, acesso em 29/09/2020.
+<p>TY-JOUR, AU-Philipp, George,AU-Song, Dawn,AU-Carbonell, Jaime,PY-2017/12/15 SP-T1-Gradients explode-Deep Networks are shallow - ResNet explained.</p> 
+<p> Schroff, F., Kalenichenko, D., Philbin, J.. FaceNet: A Unified Embedding for Face Recognition and Clustering. Disponível em: https://arxiv.org/abs/1503.03832, acesso em 01/10/2020.</p>
+
+<p>Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun. Deep Residual Learning for Image Recognition. 2015. Disponível em: https://arxiv.org/abs/1512.03385, acesso em 01/10/2020.</p>
+
+<p>Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, Alex Alemi. Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning. 2016. Disponível em: https://arxiv.org/abs/1602.07261, acesso em: 01/10/2020.</p>
+
+<p>J. Deng, W. Dong, R. Socher, L. Li, Kai Li and Li Fei-Fei, "ImageNet: A large-scale hierarchical image database," 2009 IEEE Conference on Computer Vision and Pattern Recognition, Miami, FL, 2009, pp. 248-255, doi: 10.1109/CVPR.2009.5206848.</p>
+
+
