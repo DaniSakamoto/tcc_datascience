@@ -1,0 +1,3 @@
+- Extracao de face embeddings com facenet 
+- Verificacao com Pycaret
+- XGBoost Hyperparameter Search
