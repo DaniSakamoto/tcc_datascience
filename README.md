@@ -1,6 +1,13 @@
 # Age_classification
  Trabalho de conclusão de Curso 
+<h2><center>Trabalho de conclusão do curso de Especialização em Ciência de Dados da Facens</center></h2>
+<h3><center>Faculdade de Engenharia de Sorocaba</center></h3>
 
+**Alunos:** 
+<p>
+<p>Dani Shizue Sakamoto - RA: 191219
+<p>Mariana de Castro Pires Tavares Albuquerque - RA: 191224
+<p>Tan Kim Wah - RA: 141462
 
 # Google Drive:
  https://drive.google.com/drive/folders/10_XLLffHITGkOY7zdC8mD_heSm2GgMCx?usp=sharing
