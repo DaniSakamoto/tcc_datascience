@@ -2,7 +2,7 @@
 
 Dentro do topico aborda-se:
 
-- Tratamento da base audience (passo a passo_
+- Tratamento da base audience (passo a passo)
 
 
 - Incremento dos 4 dataset
