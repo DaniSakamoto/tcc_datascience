@@ -134,6 +134,41 @@ http://www.image-net.org/explore
    Se a base analisada é muito diferente da ImageNet pode-se usar menos camadas pré-treinadas e mais para o problema específico.</p>
 
 
+### Adience Benchmark 
+
+### Artigo: Age and Gender Classification using Convolutional Neural Networks
+
+    Gil Levi and Tal Hassner
+    Department of Mathematics and Computer Science
+
+---
+
+
+
+---
+
+
+
+---
+
+
+    The Open University of Israel
+    
+https://talhassner.github.io/home/publication/2015_CVPR;
+https://github.com/GilLevi/AgeGenderDeepLearning
+
+**Classificação de idade e gênero usando redes neurais convolucionais**
+
+Publicado no Workshop IEEE sobre Análise e Modelagem de Faces e Gestos (AMFG), no IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Boston , 2015.
+
+<p style='text-align: justify;'>
+"As fontes das imagens incluídas em nosso conjunto são os álbuns do Flickr, montados por upload automático a partir de dispositivos de smartphones iPhone5 (ou posteriores), e lançados por seus autores ao público em geral sob a licença Creative Commons (CC)".</p>
+
+
+
+
+
+
 
 **Referências**
 
