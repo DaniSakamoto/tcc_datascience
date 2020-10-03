@@ -140,18 +140,6 @@ http://www.image-net.org/explore
 
     Gil Levi and Tal Hassner
     Department of Mathematics and Computer Science
-
----
-
-
-
----
-
-
-
----
-
-
     The Open University of Israel
     
 https://talhassner.github.io/home/publication/2015_CVPR;
@@ -166,7 +154,31 @@ Publicado no Workshop IEEE sobre Análise e Modelagem de Faces e Gestos (AMFG), 
 
 
 
+## Redes Utilizadas no Transfer Learning
+### ResNet 50
 
+![resnet](https://miro.medium.com/max/1000/1*zbDxCB-0QDAc4oUGVtg3xw.png)
+
+<p style='text-align: justify;'>
+  Com o aumento da profundidade das Redes Neurais, a acurácia começa a ficar saturada, devido ao problema desaparecimento do gradiente. Desse modo, pesquisadores da Microsoft resolveram esse problema com a ResNet, "pulando" conexões, ou seja, com uma rede residual. </p>
+   
+<p style='text-align: justify;'>
+   Além disso, a ResNet foi uma das primeiras a adotar o "batch normalisation", ou seja, para uma camada interna da rede, é normalizada a saída da camada anterior, subtraindo-se a média e dividindo-se pelo desvio padrão.</p>
+
+<p style='text-align: justify;'>
+   Desse modo, a ResNet 50 pode conter até 152 camadas com 26 milhões de parâmetros, sem comprometer o poder de generalização do modelo.</p>
+<br> 
+  
+### Inception ResNet-V2
+
+![inception resnet v2](https://miro.medium.com/max/1000/1*xpb6QFQ4IknSmxmgai8w-Q.png)
+   
+<p style='text-align: justify;'>
+As Inception-ResNets foram introduzidas, por pesquisadores do Google, em 2016, no mesmo artigo que as Inception-V4, e possuem 56 milhões de parâmetros.</p>
+
+<p style='text-align: justify;'>
+   Em suma, os módulos de "Inception" já presentes nas redes do tipo "Inception", foram convertidos para "Residual Inception Blocks", ou seja, há módulos que "pulam" conexões, resultando em memórial residual. Além disso, foram adicionados mais módulos de "Inception", bem como um novo tipo de módulo (Inception-A).</p>
+ 
 
 
 
