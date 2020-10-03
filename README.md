@@ -180,6 +180,244 @@ As Inception-ResNets foram introduzidas, por pesquisadores do Google, em 2016, n
 <p style='text-align: justify;'>
    Em suma, os módulos de "Inception" já presentes nas redes do tipo "Inception", foram convertidos para "Residual Inception Blocks", ou seja, há módulos que "pulam" conexões, resultando em memórial residual. Além disso, foram adicionados mais módulos de "Inception", bem como um novo tipo de módulo (Inception-A).</p>
  
+# Resultados e Comparativos
+### 1 - Comparativo entre Rede Residual RESNET-50 e a Inception ResNet - V2
+ResNet-50
+------------------------------------------------------------------------------------------------------------------------
+#### Performance do treinamento
+
+
+<!DOCTYPE html> 
+<html>
+<body>
+<table>
+<tr>
+<th><img src="https://drive.google.com/uc?id=1Qu0qPB_EG2LYL8qvayYDbavmNP8CyjUO"/></th>
+
+<th><img src="https://drive.google.com/uc?id=145oV7WD6eB3cuHGrcT_dXtlwLDgH6Hmd"/></th>
+</tr>
+</table>
+</body>
+<html>
+
+InceptionResnetV2
+------------------------------------------------------------------------------------------------------------------------
+
+#### Performance do treinamento
+    
+<!DOCTYPE html> 
+<html>
+<body>
+<table>
+<tr>
+<th><img src="https://drive.google.com/uc?id=1y2rh4KReHdMtmxmus17dYML8x04yzZGk"/></th>
+<th><img src="https://drive.google.com/uc?id=16PDFiZ1ge8Tb8uklM4s2wsNt73PLpHRO"/></th>
+</tr>
+</table>
+</body>
+<html>
+ 
+ 
+ ResNet-50
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+    Performance do treinamento                            |    Performance do teste
+
+                  precision    recall  f1-score   support |                  precision    recall  f1-score   support
+           Adult       0.65      0.99      0.78      7027 |           Adult       0.65      1.00      0.79      3012
+           Child       0.96      0.20      0.32      4737 |           Child       0.96      0.20      0.33      2032
+                                                                                                             
+        accuracy                           0.67     11764 |        accuracy                           0.67      5044
+       macro avg       0.80      0.59      0.55     11764 |       macro avg       0.81      0.60      0.56      5044
+    weighted avg       0.77      0.67      0.60     11764 |    weighted avg       0.97      0.97      0.97      5044
+--------------------------------------------------------------------------------------------------------------------
+
+InceptionResnetV2
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+    Performance do treinamento                             |    Performance do teste
+    
+                  precision    recall  f1-score   support  |                  precision    recall  f1-score   support
+           Adult       1.00      1.00      1.00      7027  |           Adult       0.97      0.99      0.98      3012  
+           Child       1.00      1.00      1.00      4737  |           Child       0.98      0.96      0.97      2032
+
+        accuracy                           1.00     11764  |        accuracy                           0.97      5044
+       macro avg       1.00      1.00      1.00     11764  |       macro avg       0.97      0.97      0.97      5044  
+    weighted avg       1.00      1.00      1.00     11764  |    weighted avg       0.97      0.97      0.97      5044
+---------------------------------------------------------------------------------------------------------------------
+
+
+#### Matriz de Confusão
+
+    |  ResNet-50   |     | InceptionResnetV2 |
+    |  2997 |  15  |     |   2968  |   44    |
+    |  1625 | 407  |     |    86   |  1946   |
+
+
+table>
+<tr>
+<th><img src="https://drive.google.com/uc?id=1u11y7cWJilyToHz10dlpSFdiBitkuHs2"/></th>
+<th><img src="https://drive.google.com/uc?id=18ol54wm2uMj--0ghgQmjcp1LJvPJ0nfg"/></th>
+</tr></table>
+
+<p style='text-align: justify;'>
+Conclusão: O modelo InceptioResnetV2 teve uma performance melhor do que o da ResNet-50.  O modelo Resnet foi desenvolvido para resolver o problema do gradiente descendente. Com os modelos Resnet, os modelos CNNs podem ir cada vez mais fundo. ResNets têm gradientes significativamente mais baixos e, portanto, podem contornar o problema do gradiente explosivo, permitindo o treinamento eficaz de redes muito mais profundas.
+InceptionResnet é uma melhoria adicional no Resnet, combinado a técnica chamada Inception que tem como objetivo principal atuar como um extrator de características em vários níveis da rede. </p>
+
+## 2 - Comparativo dos resultados utilizando o detector de faces MTCNN e sem o detector de faces :
+
+ResNet-50 - Resultado do treino e teste com as imagens sem passar pelo detector de faces
+----------------------------------------------------------------------------------------------------------------------------------
+![](https://drive.google.com/uc?export=view&H)
+
+https://drive.google.com/file/d/19KdKhQbgnx5qtD7MMAQVGOOTMbNWpt9s/view?usp=sharing
+#### Performance do treinamento
+<table>
+<tr>
+<th><img src="https://drive.google.com/uc?id=19KdKhQbgnx5qtD7MMAQVGOOTMbNWpt9s"/></th>
+<th><img src="https://drive.google.com/uc?id=1c1L_NfGmbllCwQRP-0oC4lzjReVqRMx5"/></th>
+</tr></table>
+
+
+ResNet-50 - Resultado do treino e teste utilizando o detector de faces
+----------------------------------------------------------------------------------------------------------------------------------
+
+#### Performance do treinamento
+<table>
+<tr>
+<th><img src="https://drive.google.com/uc?id=1n6p_iva_fqsf-xplV5KEkPRakhfyVDLY"/></th>
+<th><img src="https://drive.google.com/uc?id=1wj_5FOevqepojnmUGKGELL1xO2zgLcJB"/></th>
+</tr></table>
+
+ResNet-50
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+    Performance do treinamento - Sem detector de face       |     Performance do teste - Sem detector de face
+    
+                  precision    recall  f1-score   support   |                   precision    recall  f1-score   support
+           Adult       0.79      0.87      0.83      7027   |            Adult       0.78      0.87      0.82      3012
+           Child       0.77      0.84      0.80      4737   |            Child       0.76      0.83      0.79      2032
+            Teen       0.40      0.01      0.03      1267   |             Teen       0.32      0.01      0.02       542
+
+        accuracy                           0.78     13031   |         accuracy                           0.77      5586
+       macro avg       0.65      0.58      0.55     13031   |        macro avg       0.62      0.57      0.55      5586
+    weighted avg       0.74      0.78      0.74     13031   |     weighted avg       0.73      0.77      0.73      5586
+-----------------------------------------------------------------------------------------------------------------------    
+     Performance do treinamento - Com detector de face      |     Performance do teste - Com detector de face
+    
+                  precision    recall  f1-score   support   |                   precision    recall  f1-score   support
+           Adult       0.99      0.97      0.98      5759   |            Adult       0.93      0.95      0.94      2472
+           Child       0.99      0.99      0.99      3801   |            Child       0.95      0.93      0.94      1645
+            Teen       0.89      0.97      0.93       997   |             Teen       0.73      0.68      0.70       437
+
+        accuracy                           0.98     10557   |         accuracy                           0.92      4554
+       macro avg       0.96      0.98      0.97     10557   |        macro avg       0.87      0.85      0.86      4554
+    weighted avg       0.98      0.98      0.98     10557   |     weighted avg       0.91      0.92      0.91      4554
+-----------------------------------------------------------------------------------------------------------------------
+
+
+### Matriz de Confusão - ResNet-50
+
+####  1 - Sem detector de face
+
+    | Adulto  | Criança | Adolescente | 
+    |   2613  |   390   |      9      |
+    |    349  |  1677   |      6      |
+    |    390  |   145   |      7      |
+        
+####  2 - Com detector de face
+
+    | Adulto  | Criança | Adolescente | 
+    |   2348  |   44    |      80     |
+    |    88   |  1525   |      32     |
+    |   100   |   40    |     297     |
+                                
+<table>
+<tr>
+<th><img src="https://drive.google.com/uc?id=1Bi6AxbWO6Z4DDhEiGyHPy76eTiEbEfAA"/></th>
+<th><img src="https://drive.google.com/uc?id=1Ve1Hn7fuJsSOMGItBa4HN08ammwGtQJw"/></th>
+</tr></table>
+
+Conclusão: Utilizando o detector de faces obtivemos uma melhor performance em todos os testes realizados.
+
+## 3 - Comparativo dos resultados dos treinos com o Modelo InceptionResnetV2
+   - **1 - Adulto-Criança** 
+   - **2 - Adulto-Adolescente-Criança**
+   
+#### Com detecção de faces utilizando MTCNN
+
+InceptionResnetV2 - Adulto - Criança
+------------------------------------------------------------------------------------------------------------------------
+
+#### Performance do treinamento
+<table>
+<tr>
+<th><img src="https://drive.google.com/uc?id=15D7B3_XuwUfoMdpEgusG_gGTHtI_8KO0"/></th>
+<th><img src="https://drive.google.com/uc?id=1ZGwcasNhO080rlFycQSEdQIW0oDtQFX3"/></th>
+</tr></table>
+
+InceptionResnetV2 - Adulto - Adolescente - Criança
+------------------------------------------------------------------------------------------------------------------------
+
+#### Performance do treinamento
+<table>
+<tr>
+<th><img src="https://drive.google.com/uc?id=17dGQNmRRJaqK7mVY-F7G6GVWXVfBS3RS"/></th>
+<th><img src="https://drive.google.com/uc?id=16ZXyURLzDscOLsPEVG4T2fae6K9UM5yD"/></th>
+</tr></table>
+
+
+InceptionResnetV2 - Adulto - Criança
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------    
+     Performance do treinamento                             |     Performance do teste
+    
+                  precision    recall  f1-score   support   |                   precision    recall  f1-score   support
+           Adult       0.99      1.00      0.99      5759   |            Adult       0.92      0.99      0.96      2472
+           Child       1.00      0.99      0.99      3801   |            Child       0.99      0.87      0.93      1645
+
+        accuracy                           0.99      9560   |         accuracy                           0.95      4117
+       macro avg       1.00      0.99      0.99      9560   |        macro avg       0.96      0.93      0.94      4117
+    weighted avg       0.99      0.99      0.99      9560   |     weighted avg       0.95      0.95      0.94      4117
+-----------------------------------------------------------------------------------------------------------------------
+
+InceptionResnetV2 - Adulto - Adolescente - Criança
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------    
+     Performance do treinamento                             |     Performance do teste
+    
+                  precision    recall  f1-score   support   |                   precision    recall  f1-score   support
+           Adult       0.99      1.00      0.99      5759   |            Adult       0.86      0.99      0.92      2472
+           Child       1.00      0.98      0.99      3801   |            Child       0.96      0.88      0.92      1645
+            Teen       0.99      0.98      0.99       997   |             Teen       0.81      0.40      0.53       437
+
+        accuracy                           0.99     10557   |         accuracy                           0.89      4554
+       macro avg       0.99      0.99      0.99     10557   |        macro avg       0.88      0.75      0.79      4554
+    weighted avg       0.99      0.99      0.99     10557   |     weighted avg       0.89      0.89      0.88      4554
+-----------------------------------------------------------------------------------------------------------------------
+
+### Matriz de Confusão - InceptionResnetV2
+
+####  1 - Adulto / Criança
+     |  Adulto | Criança |
+     |   2457  |   15    |
+     |    209  |  1436   |
+     
+####  2 - Adulto / Adolescente / Criança
+
+    | Adulto  | Criança | Adolescente | 
+    |   2440  |   15    |      17     |
+    |    176  |  1444   |      25     |
+    |    225  |   38    |     174     |
+                              
+<table>
+<tr>
+<th><img src="https://drive.google.com/uc?id=1FClq6Z1EA8cxGF4T0DCv_Qv1lRQ1aXY0"/></th>
+<th><img src="https://drive.google.com/uc?id=1scFXb7hkM372oZ6aWI3aC6PiHhuAvuAk"/></th>
+</tr></table>
+
+Comparando os dois modelos vemos pouca diferença na performance. Destacamos que a classe "adolescente" apresenta uma acurácia menor, tal qual já verificado em Levi e Hassner (2015), e conforme mencionado anteriormente.
+
 
 ### Utilização de Face Embeddings - Facenet
 
@@ -230,37 +468,4 @@ A compiled visualisation of the common convolutional neural networks" in Towards
 
 
 
-ResNet-50
-------------------------------------------------------------------------------------------------------------------------
-#### Performance do treinamento
 
-
-<!DOCTYPE html> 
-<html>
-<body>
-<table>
-<tr>
-<th><img src="https://drive.google.com/uc?id=1Qu0qPB_EG2LYL8qvayYDbavmNP8CyjUO"/></th>
-
-<th><img src="https://drive.google.com/uc?id=145oV7WD6eB3cuHGrcT_dXtlwLDgH6Hmd"/></th>
-</tr>
-</table>
-</body>
-<html>
-
-InceptionResnetV2
-------------------------------------------------------------------------------------------------------------------------
-
-#### Performance do treinamento
-    
-<!DOCTYPE html> 
-<html>
-<body>
-<table>
-<tr>
-<th><img src="https://drive.google.com/uc?id=1y2rh4KReHdMtmxmus17dYML8x04yzZGk"/></th>
-<th><img src="https://drive.google.com/uc?id=16PDFiZ1ge8Tb8uklM4s2wsNt73PLpHRO"/></th>
-</tr>
-</table>
-</body>
-<html>
