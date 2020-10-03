@@ -447,6 +447,25 @@ Após a extração dos <i>face embeddings</i>, utilizamos a biblioteca Pycaret, 
 <p style='text-align: justify;'>
 XGBoost é uma biblioteca otimizada de aumento de gradiente distribuída projetada para ser altamente eficiente, flexível e portátil. Ele implementa algoritmos de aprendizado de máquina sob a estrutura Gradient Boosting. O XGBoost fornece um reforço de árvore paralela (também conhecido como GBDT, GBM) que resolve muitos problemas de ciência de dados de maneira rápida e precisa. O mesmo código é executado em grandes ambientes distribuídos (Hadoop, SGE, MPI) e pode resolver problemas além de bilhões de exemplos.</p>  https://xgboost.readthedocs.io/en/latest/ 
 
+-----------------------------------------------------------------------------------------------------------------------    
+     Performance do treinamento                             |     Performance do teste
+    
+                  precision    recall  f1-score   support   |                   precision    recall  f1-score   support
+           Adult       1.00      1.00      1.00      6098   |            Adult       0.94      0.99      0.96      2607
+           Child       1.00      1.00      1.00      4075   |            Child       0.98      0.97      0.97      1715
+            Teen       1.00      0.99      1.00      1141   |             Teen       0.93      0.68      0.79       480
+
+        accuracy                           1.00     11314   |         accuracy                           0.92      4802
+       macro avg       1.00      1.00      1.00     11314   |        macro avg       0.91      0.81      0.85      4802
+    weighted avg       1.00      1.00      1.00     11314   |     weighted avg       0.92      0.92      0.91      4802
+-----------------------------------------------------------------------------------------------------------------------
+
+![matrix confusao](https://drive.google.com/uc?id=1CSdSLzNPFVVgVETuNeNJLbdUPUmefjpN)
+
+<p style='text-align: justify;'>Verificamos que os resultados obtidos com a extração de <i>face embeddings</i> seguida pela classificação utilizando o algoritmo XGBoost revelaram-se ligeiramente superiores aos que obtivemos utilizando <i>transfer learning</i> com Redes Neurais Convolucionais.</p> 
+<p style='text-align: justify;'>O grande diferencial, no entanto, é o esforço computacional necessário. Se o treinamento das redes convolucionais levou <b>dias</b> em nossos computadores, o processamento completo (extração de face embeddings com a utilização do Facenet seguido do treinamento utilizando o XGBoost) realizou-se em <b>poucas horas</b>, revelando-se uma metodologia muito mais efetiva e eficiente.</p>   
+
+
 **Referências**
 
 <p>G. Levi and T. Hassncer, "Age and gender classification using convolutional neural networks," 2015 IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), Boston, MA, 2015, pp. 34-42, doi: 10.1109/CVPRW.2015.7301352.</p>
