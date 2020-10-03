@@ -1,18 +1,20 @@
-Dataset original
+## 1. TRATAMENTO
 
-Notebook
+Dentro do topico aborda-se:
 
-Separa e grava as imagens dentro do diretório:
+- Tratamento da base audience (passo a passo_
 
-Train 0.7
-Test  0.3
 
-datasets/images/
-		train/
-			Adult
-			Teenager
-			Child
-		test/
-			Adult
-			Teenager
-			Child
+- Incremento dos 4 dataset
+
+
+- Separação de cada categoria (crianca, adolescente, adulto)
+
+
+- Criacao da pasta para armazenamento dessas novas imagens, capturando apenas a face utilizando MTCNN. (Multi-Task Cascaded Convolutional Neural Network) - detector de face!
+
+![](https://drive.google.com/uc?id=1eeVjhgRf_9vvy1pMtUm0TLJiuurGL1fU)
+
+
+
+Fonte:https://datawow.io/blogs/face-detection-haar-cascade-vs-mtcnn
