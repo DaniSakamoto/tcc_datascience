@@ -254,7 +254,7 @@ InceptionResnetV2
     |  1625 | 407  |     |    86   |  1946   |
 
 
-table>
+<table>
 <tr>
 <th><img src="https://drive.google.com/uc?id=1u11y7cWJilyToHz10dlpSFdiBitkuHs2"/></th>
 <th><img src="https://drive.google.com/uc?id=18ol54wm2uMj--0ghgQmjcp1LJvPJ0nfg"/></th>
