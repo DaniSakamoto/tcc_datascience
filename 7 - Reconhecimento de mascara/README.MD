@@ -1,11 +1,9 @@
-# AgeGenderDeepLearning
+# RECONHECIMENTO DE MASCARA
 
-## Description
-The purpose of this repository is to assist readers in reproducing our results on age and gender classification for facial images as described in the following work:
+## Descrição
+aasdasdasdasdasdasdasdasdasdasdasd
 
-Gil Levi and Tal Hassner, Age and Gender Classification Using Convolutional Neural Networks, IEEE Workshop on Analysis and Modeling of Faces and Gestures (AMFG), at the IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), Boston, June 2015
-
-Project page: http://www.openu.ac.il/home/hassner/projects/cnn_agegender/
+Project page: https://github.com/sandeco/CanalSandeco/tree/master/Deep%20Learning%20s%C3%A9rie/%2315%20-%20Detectando%20Covid-19%20em%20imagens%20m%C3%A9dicas
 
 The code contains the original meta-data files with age and gender labels, a python script for creating prototxt file in order to create the lmdb's for training and shell files for creating the lmdb and mean images. 
 
