@@ -100,6 +100,38 @@ https://opencv.org/
    No OpenCV há modelos de machine learning pré-treinado para classificadores.(Na documentação do OpenCV tem o endereço do github que tem o acesso de todos os cascades/classificadores pré-treinados para detectar olho, detectar boca e outros atributos da face).</p>
   
 
+### Transfer Learning
+https://machinelearningmastery.com/how-to-improve-performance-with-transfer-learning-for-deep-learning-neural-networks/ 
+https://keras.io/guides/transfer_learning/
+
+<p style='text-align: justify;'>
+   O aprendizado por transferência é um método de aprendizado de máquina em que um modelo desenvolvido/pré-treinado(pesos e parâmetros) para uma tarefa, é reutilizado como ponto de partida para um modelo em uma segunda tarefa.</p>
+
+<p style='text-align: justify;'>
+   Tem o benefício de diminuir o tempo de treinamento para um modelo de rede neural e pode resultar em um erro de generalização menor. O objetivo é aproveitar os dados da primeira configuração para extrair informações que podem ser úteis ao aprender ou mesmo, ao fazer previsões diretamente na segunda configuração. </p>
+ 
+<p style='text-align: justify;'>
+    A aprendizagem por transferência é a reusabilidade de modelos, otimização e um atalho para economizar tempo ou obter melhor desempenho.</p>
+
+<p style='text-align: justify;'>
+    Utiliza modelos pré-treinados, normalmente utilizando milhões de amostras de dados com centenas de hyperparametros como ponto de entrada do processo de aprendizado. Conjunto de dados mais utilizado é o ImageNet.</p>
+   
+   
+### ImageNet
+http://www.image-net.org/
+
+Explore Categorias:
+http://www.image-net.org/explore
+
+<p style='text-align: justify;'>
+   A ImageNet é uma base de dados extremamente grande, cerca de 14.197.122 imagens de alta resolução e 21.841 indexadas(que tem informações de classes). Está organizado de acordo com a hierarquia WordNet (atualmente apenas os substantivos), em que cada nó da hierarquia é representado por centenas e milhares de imagens. Ela é usada em competições pra trabalhar com Visão Computacional como na ImageNet Large-Scale Visual Recognition Challenge (ILSVRC).
+</p>
+<p style='text-align: justify;'>
+   Em uma Rede Neural Convolucional Pré-treinada como InceptionResnetV2 carregamos os pesos pré-treinados no ImageNet como no exemplo a seguir:</p>
+   InceptionResnetV2(weights='imagenet')
+    
+<p style='text-align: justify;'>   
+   Se a base analisada é muito diferente da ImageNet pode-se usar menos camadas pré-treinadas e mais para o problema específico.</p>
 
 
 
