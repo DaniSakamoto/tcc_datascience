@@ -229,3 +229,38 @@ A compiled visualisation of the common convolutional neural networks" in Towards
 <p>J. Deng, W. Dong, R. Socher, L. Li, Kai Li and Li Fei-Fei, "ImageNet: A large-scale hierarchical image database," 2009 IEEE Conference on Computer Vision and Pattern Recognition, Miami, FL, 2009, pp. 248-255, doi: 10.1109/CVPR.2009.5206848.</p>
 
 
+
+ResNet-50
+------------------------------------------------------------------------------------------------------------------------
+#### Performance do treinamento
+
+
+<!DOCTYPE html> 
+<html>
+<body>
+<table>
+<tr>
+<th><img src="https://drive.google.com/uc?id=1Qu0qPB_EG2LYL8qvayYDbavmNP8CyjUO"/></th>
+
+<th><img src="https://drive.google.com/uc?id=145oV7WD6eB3cuHGrcT_dXtlwLDgH6Hmd"/></th>
+</tr>
+</table>
+</body>
+<html>
+
+InceptionResnetV2
+------------------------------------------------------------------------------------------------------------------------
+
+#### Performance do treinamento
+    
+<!DOCTYPE html> 
+<html>
+<body>
+<table>
+<tr>
+<th><img src="https://drive.google.com/uc?id=1y2rh4KReHdMtmxmus17dYML8x04yzZGk"/></th>
+<th><img src="https://drive.google.com/uc?id=16PDFiZ1ge8Tb8uklM4s2wsNt73PLpHRO"/></th>
+</tr>
+</table>
+</body>
+<html>
