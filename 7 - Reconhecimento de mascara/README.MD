@@ -5,7 +5,7 @@ Com as medidas adotadas no momento da pandemia causada pelo COVID-19, o uso de m
 
 Nesse notebook, demonstra a aplicação dessa identificação de forma simples e prático.
 
-Os modelos gerados estão disponiveis no Google Drive:
+Os modelos e arquivos gerados estão disponiveis no Google Drive:
 https://drive.google.com/drive/folders/1emAMmer9zuB5fWf_v10PnkpvyyYZvJ5I?usp=sharing
 
 *modelo da mascara -> MASK.h5
