@@ -40,7 +40,7 @@ Análise efetuada a partir do dataset "Adience", disponível em "Unfiltered Face
 <li>Na extração de features;</li>
 <li>No alinhamento de imagens;</li>
 <li>Na identificação de objetos;</li>
-<li>e diversas outras etapas.</li>
+<li>E diversas outras etapas.</li>
 </ul>
 <p style='text-align: justify;'>
    Para conseguirmos um bom resultado quando se trata de classificação, detecção de objetos em imagem é comum fazer a junção de diversos modelos do início ao fim. Com deep learning todos os modelos já são enfileirados, onde a saída é apenas uma, ou seja, a classificação de determinado evento se torna a entrada do próximo. Então a partir de uma camada o resultado dessa camada se torna a entrada da próxima camada, formando assim um pipeline extremamente grande e complexo.</p>
@@ -156,6 +156,7 @@ Publicado no Workshop IEEE sobre Análise e Modelagem de Faces e Gestos (AMFG), 
 
 ## Redes Utilizadas no Transfer Learning
 ### ResNet 50
+ COMPARATIVO DOS RESULTADOS E TODO O RESULTADO em -> https://drive.google.com/file/d/1wNkqbWvPC9ov-ZQu9EJ5h-KkDiBs83iw/view?usp=sharing
 
 ![resnet](https://miro.medium.com/max/1000/1*zbDxCB-0QDAc4oUGVtg3xw.png)
 
