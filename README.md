@@ -3,9 +3,9 @@
 
 **Alunos:** 
 <p>
-<p>Dani Shizue Sakamoto - RA: 191219
-<p>Mariana de Castro Pires Tavares Albuquerque - RA: 191224
-<p>Tan Kim Wah - RA: 141462
+<p>Dani Shizue Sakamoto - https://www.linkedin.com/in/dani-sakamoto-b8250593/
+<p>Mariana de Castro Pires Tavares Albuquerque  - https://www.linkedin.com/in/mariana-de-c-pires-tavares-albuquerque-9b4b7689/
+<p>Tan Kin Wah - https://www.linkedin.com/in/tan-kin-wah/
 
 # Google Drive:
  https://drive.google.com/drive/folders/10_XLLffHITGkOY7zdC8mD_heSm2GgMCx?usp=sharing
