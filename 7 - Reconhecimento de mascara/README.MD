@@ -7,7 +7,8 @@ Nesse notebook, demonstra a aplicação dessa identificação de forma simples e
 
 Os modelos gerados estão disponiveis no Google Drive:
 https://drive.google.com/drive/folders/1emAMmer9zuB5fWf_v10PnkpvyyYZvJ5I?usp=sharing
-*modelo -> MASK.h5
+
+*modelo da mascara -> MASK.h5
 
 
 ## REFERENCIA:
