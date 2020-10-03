@@ -6,6 +6,7 @@ A proposta desse repositorio é auxiliar os leitores na reprodução nos nossos 
 Nesse topico abordaremos a execução do reconhecimento de face através do artigo de Gil Levi e Tal Hassner:
 
 Pagina do projeto: http://www.openu.ac.il/home/hassner/projects/cnn_agegender/
+
 Repositorio Github : https://github.com/GilLevi/AgeGenderDeepLearning
 
 # REFERENCIA
