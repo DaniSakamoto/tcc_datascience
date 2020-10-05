@@ -1,7 +1,7 @@
 <h2><center>Trabalho de conclusão do curso de Especialização em Ciência de Dados da Facens</center></h2>
 <h3><center>Faculdade de Engenharia de Sorocaba</center></h3>
 
-
+**Alunos :** 
 <p>
 <p>Dani Shizue Sakamoto - https://www.linkedin.com/in/dani-sakamoto-b8250593/
 <p>Mariana de Castro Pires Tavares Albuquerque  - https://www.linkedin.com/in/mariana-de-c-pires-tavares-albuquerque-9b4b7689/
