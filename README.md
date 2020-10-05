@@ -1,12 +1,14 @@
 <h2><center>Trabalho de conclusão do curso de Especialização em Ciência de Dados da Facens</center></h2>
 <h3><center>Faculdade de Engenharia de Sorocaba</center></h3>
 
-**Alunos:** 
-* Orientador : Fernando Vieira da Silva
+
 <p>
 <p>Dani Shizue Sakamoto - https://www.linkedin.com/in/dani-sakamoto-b8250593/
 <p>Mariana de Castro Pires Tavares Albuquerque  - https://www.linkedin.com/in/mariana-de-c-pires-tavares-albuquerque-9b4b7689/
 <p>Tan Kin Wah - https://www.linkedin.com/in/tan-kin-wah/
+
+**Orientador:** 
+Fernando Vieira da Silva
 
 # Google Drive:
  https://drive.google.com/drive/folders/10_XLLffHITGkOY7zdC8mD_heSm2GgMCx?usp=sharing
