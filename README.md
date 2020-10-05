@@ -2,6 +2,7 @@
 <h3><center>Faculdade de Engenharia de Sorocaba</center></h3>
 
 **Alunos:** 
+<p> Orientador : Fernando Vieira da Silva
 <p>
 <p>Dani Shizue Sakamoto - https://www.linkedin.com/in/dani-sakamoto-b8250593/
 <p>Mariana de Castro Pires Tavares Albuquerque  - https://www.linkedin.com/in/mariana-de-c-pires-tavares-albuquerque-9b4b7689/
