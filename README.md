@@ -346,7 +346,7 @@ ResNet-50
 <th><img src="https://drive.google.com/uc?id=1Ve1Hn7fuJsSOMGItBa4HN08ammwGtQJw"/></th>
 </tr></table>
 
-Conclusão: Utilizando o detector de faces obtivemos uma melhor performance em todos os testes realizados.
+Conclusão: Utilizando o detector de faces obtivemos uma melhor performance em todos os testes realizados com ResNet-50. Já os testes com a Rede Inception Resnet V2 tivemos uma melhor performance sem o detector MTCNN.
 
 ## 3 - Comparativo dos resultados dos treinos com o Modelo InceptionResnetV2
    - **1 - Adulto-Criança** 
